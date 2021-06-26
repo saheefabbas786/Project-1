@@ -1,0 +1,165 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header{
+    background: #25794b;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+footer{
+    background: #25794b;
+    text-align: center;
+    color: white;
+    padding: 0px 0;
+}
+
+
+header a{
+    color: white;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+#main{
+    /* to make aside tag and article tag allign vertically */
+    display: flex; 
+}
+
+aside{
+    /* arrange the syze of side-bar */
+    flex: 0 0 20vw;
+    background-color: beige;
+}
+
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+
+aside img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* To make the buttons of read more allign in horizontal manners */
+aside ul a{
+    color: #25794b;
+   /* TO MAKE ACTUAL AND ACCURATE PADDING ON ANCHOR TAGS WE HAVE TO MAKE SURE TO DO (display : block) */
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.logo{
+    margin: 0 auto; 
+    font-size: xx-large;
+}
+
+article{
+    padding: 10px;
+}
+
+article h2{
+    text-align: center;
+    background-color:  #25794b;
+    color: white;
+    
+}
+
+#nav-menu li{
+    padding: 10px;
+}
+
+#social-icons a{
+    padding: 10px;
+}
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-box{
+    border: 1px solid #eee;
+    flex-basis: 28%;
+    padding: 10px;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.service-box h3{
+    margin: 10px 0 5px;
+}
+
+.service-box img{
+    width: 100%;
+}
+
+.service-button a{
+    background: grey;
+    color: white;
+    border: 1px solid transparent;
+    padding: 8px 13px;
+    display: block;
+}
+
+.service-button a:hover{
+    background: transparent;
+    border: 1px solid grey;
+    color: grey;
+}
+
+.service-button{
+   /* Vertically allignment */
+    align-self: flex-start;
+    /* To cover the remaining space in the div */
+    margin-top: auto;
+}
+
+@media  screen and (max-width:600px) {
+
+header{
+    flex-direction: column;
+}
+
+.logo{
+    order: -1;
+}
+
+#main{
+    flex-direction: column;
+}
+
+article{
+    order: -1;
+}
+
+.services-container{
+    flex-direction: column;
+}
+.service-box{
+    margin: 0 auto;
+}
+
+.service-button{
+    margin: 0 auto;
+    display: block;
+}
+    
+}
